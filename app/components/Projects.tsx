@@ -32,7 +32,7 @@ export default function Projects() {
   return (
     <ScrollAnimation>
       <ParallaxSection
-        className="py-24 relative z-10"
+        className="lg:py-24 relative z-10"
         offset={["start center", "end start"]}
         yOffset={["0%", "100%"]}
       >

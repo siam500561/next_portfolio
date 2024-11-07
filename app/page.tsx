@@ -31,7 +31,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container mx-auto px-8 text-stone-300 h-full lg:pb-96">
+      <div className="container mx-auto text-stone-300 h-full lg:pb-96">
         <Navbar />
         <Hero />
         <Technologies />

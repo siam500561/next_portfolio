@@ -3,17 +3,14 @@
 import { TESTIMONIALS } from "@/constants";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useRef } from "react";
 import { ScrollAnimation } from "./ScrollAnimation";
 import ParallaxSection from "./effects/ParallaxSection";
 
 export default function Testimonials() {
-  const containerRef = useRef<HTMLDivElement>(null);
-
   return (
     <ScrollAnimation>
       <ParallaxSection
-        className="lg:pt-[35vh] mt-[65vh] pb-20"
+        className="mt-40 lg:mt-[70rem] pb-20"
         offset={["start center", "end start"]}
         yOffset={["0%", "50%"]}
       >
