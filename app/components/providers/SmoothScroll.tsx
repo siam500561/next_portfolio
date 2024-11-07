@@ -64,11 +64,5 @@ export default function SmoothScroll({
     };
   }, []);
 
-  return (
-    <div className="relative min-h-dvh">
-      {children}
-      {/* Add bottom spacer */}
-      <div className="lg:h-[130vh] pointer-events-none" aria-hidden="true" />
-    </div>
-  );
+  return <div className="relative min-h-dvh">{children}</div>;
 }

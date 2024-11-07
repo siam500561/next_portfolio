@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Technologies from "./components/Technologies";
+import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   return (
@@ -26,11 +27,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container mx-auto px-8 text-stone-300 h-full">
+      <div className="container mx-auto px-8 text-stone-300 h-full lg:pb-96">
         <Navbar />
         <Hero />
         <Technologies />
         <Projects />
+        <Testimonials />
       </div>
     </div>
   );

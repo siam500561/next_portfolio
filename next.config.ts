@@ -5,6 +5,13 @@ const nextConfig: NextConfig = {
   devIndicators: {
     appIsrStatus: false,
   },
+  images: {
+    remotePatterns: [
+      {
+        hostname: "api.dicebear.com",
+      },
+    ],
+  },
 };
 
 export default nextConfig;

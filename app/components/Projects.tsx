@@ -31,7 +31,11 @@ export default function Projects() {
 
   return (
     <ScrollAnimation>
-      <ParallaxSection className="py-24">
+      <ParallaxSection
+        className="py-24 relative z-10"
+        offset={["start center", "end start"]}
+        yOffset={["0%", "100%"]}
+      >
         <ParallaxSection scale yOffset={["0%", "25%"]}>
           <h2 className="mb-20 text-center text-4xl">Featured Projects</h2>
         </ParallaxSection>

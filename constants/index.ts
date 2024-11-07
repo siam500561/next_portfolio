@@ -74,3 +74,41 @@ export const CONTACT = {
   phoneNo: "+12 4555 666 00 ",
   email: "me@example.com",
 };
+
+export const TESTIMONIALS = [
+  {
+    name: "John Smith",
+    role: "CEO at TechCorp",
+    image: "https://api.dicebear.com/7.x/personas/png?seed=john",
+    content:
+      "Working with Siam was an absolute pleasure. His technical expertise and attention to detail resulted in an outstanding product that exceeded our expectations.",
+  },
+  {
+    name: "Sarah Johnson",
+    role: "Product Manager at InnovateLabs",
+    image: "https://api.dicebear.com/7.x/personas/png?seed=sarah",
+    content:
+      "Siam's ability to understand complex requirements and translate them into elegant solutions is remarkable. He's a true professional who delivers on time.",
+  },
+  {
+    name: "Michael Brown",
+    role: "CTO at StartupX",
+    image: "https://api.dicebear.com/7.x/personas/png?seed=michael",
+    content:
+      "One of the most talented developers I've worked with. His full-stack expertise and problem-solving skills are exceptional.",
+  },
+  {
+    name: "Emily Davis",
+    role: "Lead Designer at CreativeHub",
+    image: "https://api.dicebear.com/7.x/personas/png?seed=emily",
+    content:
+      "Siam's collaborative approach and technical skills made our project a success. He's great at bridging the gap between design and development.",
+  },
+  {
+    name: "David Wilson",
+    role: "Engineering Manager at ScaleCo",
+    image: "https://api.dicebear.com/7.x/personas/png?seed=david",
+    content:
+      "Exceptional developer with a keen eye for detail. His code quality and architectural decisions were spot-on.",
+  },
+];
