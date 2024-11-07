@@ -9,6 +9,11 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         hostname: "api.dicebear.com",
+        protocol: "https",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
       },
     ],
   },

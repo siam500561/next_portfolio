@@ -1,12 +1,24 @@
 "use client";
 
-import { PROJECTS } from "@/constants";
+import { Project } from "@/app/types/project";
+import { fetchProjects } from "@/lib/fetchProjects";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import { ScrollAnimation } from "./ScrollAnimation";
 import ParallaxSection from "./effects/ParallaxSection";
 
 export default function Projects() {
+  const [projects, setProjects] = useState<Project[]>([]);
+
+  useEffect(() => {
+    async function getProjects() {
+      const data = await fetchProjects();
+      setProjects(data);
+    }
+    getProjects();
+  }, []);
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -47,9 +59,9 @@ export default function Projects() {
           viewport={{ once: true, margin: "-50px" }}
           className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto"
         >
-          {PROJECTS.map((project) => (
+          {projects.map((project) => (
             <ParallaxSection
-              key={project.title}
+              key={project._id}
               yOffset={["2%", "-2%"]}
               opacityRange={[0.8, 1]}
             >
@@ -60,10 +72,9 @@ export default function Projects() {
                 {/* Image Container */}
                 <div className="relative aspect-video overflow-hidden rounded-lg">
                   <Image
-                    src={project.image}
+                    src={project.imageUrl}
                     alt={project.title}
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    placeholder="blur"
                     quality={90}
                     fill
                   />
