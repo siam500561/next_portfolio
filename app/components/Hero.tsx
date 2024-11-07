@@ -14,7 +14,7 @@ export default function Hero() {
         opacityRange={[1, 0]}
         className="pb-4 lg:mb-36 relative"
       >
-        <div className="flex flex-wrap lg:flex-row-reverse -mt-10">
+        <div className="flex flex-wrap lg:flex-row-reverse lg:-mt-10">
           <ParallaxSection
             yOffset={["0%", "25%"]}
             opacityRange={[1, 0]}
@@ -79,7 +79,7 @@ export default function Hero() {
                   ease: "easeOut",
                   delay: 0.2,
                 }}
-                className="pb-4 text-4xl tracking-tight md:text-5xl xl:text-8xl"
+                className="pb-4 text-4xl tracking-tight md:text-5xl xl:text-8xl text-stone-"
               >
                 Ohiduzzaman Siam
               </motion.h2>

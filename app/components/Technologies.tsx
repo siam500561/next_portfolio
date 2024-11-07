@@ -33,7 +33,7 @@ export default function Technologies() {
 
   return (
     <ScrollAnimation>
-      <ParallaxSection className="pb-24">
+      <ParallaxSection className="pb-24 relative z-10">
         <ParallaxSection scale yOffset={["0%", "50%"]}>
           <h2 className="my-20 text-center text-4xl">Technologies</h2>
         </ParallaxSection>
