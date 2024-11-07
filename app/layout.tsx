@@ -1,4 +1,3 @@
-import { Analytics } from "@iamsiam/analytics";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import SmoothScroll from "./components/providers/SmoothScroll";
@@ -46,10 +45,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Analytics
-          apiKey="wa_5TDkrjFK5WQPeBPd3NYVtOmy8ZPN45Qu"
-          apiUrl="https://iamsiamanylatics.vercel.app"
-        />
         <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
