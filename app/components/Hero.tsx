@@ -12,7 +12,7 @@ export default function Hero() {
       <ParallaxSection
         offset={["start start", "end start"]}
         opacityRange={[1, 0]}
-        className="pb-4 lg:mb-36 relative"
+        className="pb-4 lg:mb-36 relative flex flex-col"
       >
         <div className="flex flex-wrap lg:flex-row-reverse lg:-mt-10">
           <ParallaxSection
@@ -66,7 +66,7 @@ export default function Hero() {
           </ParallaxSection>
 
           <ParallaxSection
-            yOffset={["0%", "40%"]}
+            yOffset={["0%", "20%"]}
             opacityRange={[1, 0]}
             className="w-full lg:w-1/2"
           >
