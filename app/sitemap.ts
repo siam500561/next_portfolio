@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-// !! Replace 'https://your-domain.com' with your actual domain !!
+// Replace with your actual domain
 const siteUrl = "https://iamsiam.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticUrls = staticRoutes.map((route) => ({
     url: `${siteUrl}${route}`,
     lastModified: new Date(),
-    changeFrequency: "monthly" as const, // Or 'yearly', 'daily', 'weekly', 'always', 'never'
+    changeFrequency: "monthly" as const,
     priority: route === "/" ? 1 : 0.8, // Homepage usually has highest priority
   }));
 
