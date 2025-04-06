@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import SmoothScroll from "./components/providers/SmoothScroll";
 import "./globals.css";
-
+import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 const siteUrl = "https://iamsiam.vercel.app";
@@ -114,6 +114,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <SmoothScroll>{children}</SmoothScroll>
+        <Analytics />
       </body>
     </html>
   );
