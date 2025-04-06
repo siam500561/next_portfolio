@@ -73,7 +73,7 @@ export default function Projects() {
                 <div className="relative aspect-video overflow-hidden rounded-lg">
                   <Image
                     src={project.imageUrl}
-                    alt={project.title}
+                    alt={`${project.title} - Project Screenshot | Built by Ohiduzzaman Siam`}
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                     quality={90}
                     fill
@@ -105,13 +105,16 @@ export default function Projects() {
 
                   {/* Hover Button */}
                   <div className="mt-3 flex justify-end">
-                    <motion.button
+                    <motion.a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       whileHover={{ scale: 1.03 }}
                       whileTap={{ scale: 0.97 }}
                       className="rounded-full bg-white px-3.5 py-1.5 text-xs text-black transition-colors hover:bg-stone-200"
                     >
                       View Project
-                    </motion.button>
+                    </motion.a>
                   </div>
                 </div>
               </motion.div>

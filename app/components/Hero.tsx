@@ -53,7 +53,7 @@ export default function Hero() {
 
                   <Image
                     src="/profile.webp"
-                    alt="profile"
+                    alt="Ohiduzzaman Siam - Full Stack Developer"
                     width={1000}
                     height={1000}
                     priority
@@ -71,7 +71,7 @@ export default function Hero() {
             className="w-full lg:w-1/2"
           >
             <div className="flex flex-col items-center lg:items-start mt-5 lg:mt-0">
-              <motion.h2
+              <motion.h1
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{
@@ -82,9 +82,9 @@ export default function Hero() {
                 className="pb-4 text-4xl tracking-tight md:text-5xl xl:text-8xl text-stone-"
               >
                 Ohiduzzaman Siam
-              </motion.h2>
+              </motion.h1>
 
-              <motion.span
+              <motion.h2
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{
@@ -95,7 +95,7 @@ export default function Hero() {
                 className="bg-gradient-to-r from-stone-300 to-stone-400 bg-clip-text text-3xl tracking-tight text-transparent"
               >
                 Full Stack Developer
-              </motion.span>
+              </motion.h2>
 
               <motion.p
                 initial={{ y: 20, opacity: 0 }}

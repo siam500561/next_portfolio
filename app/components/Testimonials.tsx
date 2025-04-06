@@ -16,7 +16,9 @@ export default function Testimonials() {
       >
         <div className="lg:mt-24">
           <ParallaxSection scale yOffset={["0%", "25%"]}>
-            <h2 className="mb-20 text-center text-4xl">Testimonials</h2>
+            <h2 className="mb-20 text-center text-4xl">
+              Client Testimonials & Reviews
+            </h2>
           </ParallaxSection>
 
           <motion.div
@@ -50,7 +52,7 @@ export default function Testimonials() {
                     <div className="relative h-12 w-12 flex-shrink-0">
                       <Image
                         src={testimonial.image}
-                        alt={testimonial.name}
+                        alt={`${testimonial.name} - ${testimonial.role} | Client Testimonial`}
                         fill
                         className="rounded-full object-cover"
                       />
@@ -93,7 +95,7 @@ export default function Testimonials() {
                       <div className="relative h-12 w-12 flex-shrink-0">
                         <Image
                           src={testimonial.image}
-                          alt={testimonial.name}
+                          alt={`${testimonial.name} - ${testimonial.role} | Client Testimonial`}
                           fill
                           className="rounded-full object-cover"
                         />

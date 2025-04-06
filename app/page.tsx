@@ -1,19 +1,13 @@
 "use client";
 
-import { Analytics } from "@iamsiam/analytics";
 import { motion } from "framer-motion";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
 import Technologies from "./components/Technologies";
 import Testimonials from "./components/Testimonials";
 export default function Home() {
   return (
     <div className="w-full">
-      <Analytics
-        apiKey="wa_5TDkrjFK5WQPeBPd3NYVtOmy8ZPN45Qu"
-        apiUrl="https://iamsiamanylatics.vercel.app"
-      />
       <div className="fixed inset-0 -z-10">
         <div className="relative h-full w-full bg-black">
           <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:18px_24px] opacity-45"></div>
@@ -35,7 +29,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <Technologies />
-        <Projects />
+        {/* <Projects /> */}
         <Testimonials />
       </div>
     </div>

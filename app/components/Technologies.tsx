@@ -31,11 +31,26 @@ export default function Technologies() {
     { Icon: TbBrandNextjs, color: "text-white" },
   ];
 
+  // Function to get technology names for aria-labels
+  const getTechName = (index: number): string => {
+    const techNames = [
+      "React.js",
+      "Node.js",
+      "MongoDB",
+      "Prisma ORM",
+      "Redis",
+      "Next.js",
+    ];
+    return techNames[index] || "Web Technology";
+  };
+
   return (
     <ScrollAnimation>
       <ParallaxSection className="pb-24 relative z-10">
         <ParallaxSection scale yOffset={["0%", "50%"]}>
-          <h2 className="my-20 text-center text-4xl">Technologies</h2>
+          <h2 className="my-20 text-center text-4xl">
+            Web Development Technologies & Stack
+          </h2>
         </ParallaxSection>
 
         <motion.div
@@ -54,7 +69,10 @@ export default function Technologies() {
               viewport={{ once: true }}
               className="p-3"
             >
-              <Icon className={`text-7xl ${color} ${size}`} />
+              <Icon
+                className={`text-7xl ${color} ${size}`}
+                aria-label={getTechName(index)}
+              />
             </motion.div>
           ))}
         </motion.div>
